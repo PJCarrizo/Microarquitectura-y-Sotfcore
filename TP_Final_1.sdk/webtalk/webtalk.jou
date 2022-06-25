@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.1 (64-bit)
+# SW Build 2188600 on Wed Apr  4 18:40:38 MDT 2018
+# 
+# Start of session at: Fri Jun 24 06:47:11 2022
+# Process ID: 9828
+# Current directory: C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/webtalk/webtalk.log
+# Journal file: C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

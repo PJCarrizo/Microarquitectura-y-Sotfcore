@@ -1,0 +1,13 @@
+vhdl xil_defaultlib  \
+"../../../bd/system/ip/system_axi_gpio_0_0/sim/system_axi_gpio_0_0.vhd" \
+"../../../bd/system/ip/system_rst_ps7_0_100M_0/sim/system_rst_ps7_0_100M_0.vhd" \
+"../../../bd/system/ip/system_axi_gpio_1_0/sim/system_axi_gpio_1_0.vhd" \
+"../../../bd/system/ipshared/f0d9/hdl/led_ip_v1_0_S0000_AXI.vhd" \
+"../../../../../Users/Usuario/OneDrive/Escritorio/Posgrado/16_CLP_II/Clase_5/lab3_user_logic.vhd" \
+"../../../bd/system/ipshared/f0d9/hdl/led_ip_v1_0.vhd" \
+"../../../bd/system/ip/system_led_ip_0_0/sim/system_led_ip_0_0.vhd" \
+"../../../bd/system/ip/system_vio_0_0/sim/system_vio_0_0.vhd" \
+"../../../bd/system/sim/system.vhd" \
+"../../../bd/system/ip/system_axi_gpio_2_0/sim/system_axi_gpio_2_0.vhd" \
+
+nosort

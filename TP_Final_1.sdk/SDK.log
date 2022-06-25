@@ -1,0 +1,583 @@
+15:51:57 INFO  : Registering command handlers for SDK TCF services
+15:51:58 INFO  : Launching XSCT server: xsct.bat -interactive C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\temp_xsdb_launch_script.tcl
+15:52:00 INFO  : XSCT server has started successfully.
+15:52:00 INFO  : Successfully done setting XSCT server connection channel  
+15:52:02 INFO  : Successfully done setting SDK workspace  
+15:52:02 INFO  : Processing command line option -hwspec C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf.
+20:02:10 INFO  : No changes in MSS file content so not generating sources.
+20:11:17 INFO  : No changes in MSS file content so not generating sources.
+05:40:11 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+05:40:20 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+05:40:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+05:40:29 INFO  : 'fpga -state' command is executed.
+05:40:30 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+05:40:31 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+05:40:36 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+05:40:36 INFO  : 'jtag frequency' command is executed.
+05:40:36 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+05:40:37 INFO  : Context for 'APU' is selected.
+05:40:37 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+05:40:37 INFO  : 'configparams force-mem-access 1' command is executed.
+05:40:37 INFO  : Context for 'APU' is selected.
+05:40:37 INFO  : 'stop' command is executed.
+05:40:54 INFO  : 'ps7_init' command is executed.
+05:40:54 INFO  : 'ps7_post_config' command is executed.
+05:40:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:40:54 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+05:40:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:40:55 INFO  : The application 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+05:40:55 INFO  : 'configparams force-mem-access 0' command is executed.
+05:40:55 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+dow C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+05:40:55 INFO  : Memory regions updated for context APU
+05:40:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:40:55 INFO  : 'con' command is executed.
+05:40:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+con
+----------------End of Script----------------
+
+05:40:55 INFO  : Launch script is exported to file 'C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_tp_final_1.elf_on_local.tcl'
+06:32:47 INFO  : Disconnected from the channel tcfchan#2.
+06:32:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+06:32:49 INFO  : 'fpga -state' command is executed.
+06:32:49 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+06:32:49 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+06:32:55 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+06:32:55 INFO  : 'jtag frequency' command is executed.
+06:32:55 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+06:32:55 INFO  : Context for 'APU' is selected.
+06:32:57 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+06:32:57 INFO  : 'configparams force-mem-access 1' command is executed.
+06:32:57 INFO  : Context for 'APU' is selected.
+06:32:57 INFO  : 'stop' command is executed.
+06:33:12 INFO  : 'ps7_init' command is executed.
+06:33:12 INFO  : 'ps7_post_config' command is executed.
+06:33:12 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:33:13 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+06:33:13 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:33:13 INFO  : The application 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+06:33:13 INFO  : 'configparams force-mem-access 0' command is executed.
+06:33:13 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+dow C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+06:33:14 INFO  : Memory regions updated for context APU
+06:33:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:33:14 INFO  : 'con' command is executed.
+06:33:14 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+con
+----------------End of Script----------------
+
+06:33:14 INFO  : Launch script is exported to file 'C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_tp_final_1.elf_on_local.tcl'
+07:21:20 INFO  : Disconnected from the channel tcfchan#3.
+07:22:02 ERROR : Channel closed
+07:26:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+07:26:39 INFO  : 'fpga -state' command is executed.
+07:26:40 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+07:26:40 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+07:26:40 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+07:26:40 INFO  : 'jtag frequency' command is executed.
+07:26:40 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:26:41 INFO  : Context for 'APU' is selected.
+07:26:41 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:26:41 INFO  : 'configparams force-mem-access 1' command is executed.
+07:26:41 INFO  : Context for 'APU' is selected.
+07:26:41 INFO  : 'stop' command is executed.
+07:27:02 INFO  : 'ps7_init' command is executed.
+07:27:02 INFO  : 'ps7_post_config' command is executed.
+07:27:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:27:03 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+07:27:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:27:03 INFO  : The application 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+07:27:03 INFO  : 'configparams force-mem-access 0' command is executed.
+07:27:03 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+dow C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+07:27:04 INFO  : Memory regions updated for context APU
+07:27:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:27:04 INFO  : 'con' command is executed.
+07:27:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+con
+----------------End of Script----------------
+
+07:27:04 INFO  : Launch script is exported to file 'C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_tp_final_1.elf_on_local.tcl'
+17:57:05 WARN  : channel "tcfchan#5" closed
+18:13:38 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+18:14:15 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+18:14:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+18:14:28 INFO  : 'fpga -state' command is executed.
+18:14:29 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+18:14:30 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+18:14:30 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+18:14:30 INFO  : 'jtag frequency' command is executed.
+18:14:30 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+18:14:30 INFO  : Context for 'APU' is selected.
+18:14:30 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+18:14:30 INFO  : 'configparams force-mem-access 1' command is executed.
+18:14:30 INFO  : Context for 'APU' is selected.
+18:14:31 INFO  : 'stop' command is executed.
+18:14:47 INFO  : 'ps7_init' command is executed.
+18:14:47 INFO  : 'ps7_post_config' command is executed.
+18:14:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:47 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+18:14:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:48 INFO  : The application 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:14:48 INFO  : 'configparams force-mem-access 0' command is executed.
+18:14:48 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+dow C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:14:48 INFO  : Memory regions updated for context APU
+18:14:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:14:48 INFO  : 'con' command is executed.
+18:14:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+con
+----------------End of Script----------------
+
+18:14:48 INFO  : Launch script is exported to file 'C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_tp_final_1.elf_on_local.tcl'
+04:59:37 INFO  : Disconnected from the channel tcfchan#7.
+04:59:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+04:59:39 INFO  : 'fpga -state' command is executed.
+04:59:39 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+04:59:39 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+04:59:39 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+04:59:39 INFO  : 'jtag frequency' command is executed.
+04:59:39 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:59:40 INFO  : Context for 'APU' is selected.
+04:59:41 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:59:41 INFO  : 'configparams force-mem-access 1' command is executed.
+04:59:41 INFO  : Context for 'APU' is selected.
+04:59:42 INFO  : 'stop' command is executed.
+04:59:58 INFO  : 'ps7_init' command is executed.
+04:59:58 INFO  : 'ps7_post_config' command is executed.
+04:59:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:59:58 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:59:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:59:59 INFO  : The application 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:59:59 INFO  : 'configparams force-mem-access 0' command is executed.
+04:59:59 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+dow C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:59:59 INFO  : Memory regions updated for context APU
+04:59:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+05:00:00 INFO  : 'con' command is executed.
+05:00:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+con
+----------------End of Script----------------
+
+05:00:00 INFO  : Launch script is exported to file 'C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_tp_final_1.elf_on_local.tcl'
+06:36:06 INFO  : Disconnected from the channel tcfchan#8.
+06:36:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+06:36:07 INFO  : 'fpga -state' command is executed.
+06:36:07 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+06:36:08 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+06:36:08 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+06:36:08 INFO  : 'jtag frequency' command is executed.
+06:36:08 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+06:36:08 INFO  : Context for 'APU' is selected.
+06:36:09 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+06:36:10 INFO  : 'configparams force-mem-access 1' command is executed.
+06:36:10 INFO  : Context for 'APU' is selected.
+06:36:10 INFO  : 'stop' command is executed.
+06:36:10 ERROR : Memory read error at 0xF8007080. AHB AP transaction error, DAP status 0xF0000021
+06:36:10 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+06:36:31 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+06:36:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+06:36:46 INFO  : 'fpga -state' command is executed.
+06:36:46 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+06:36:46 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+06:36:46 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+06:36:46 INFO  : 'jtag frequency' command is executed.
+06:36:46 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+06:36:46 INFO  : Context for 'APU' is selected.
+06:36:46 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+06:36:46 INFO  : 'configparams force-mem-access 1' command is executed.
+06:36:46 INFO  : Context for 'APU' is selected.
+06:36:46 INFO  : 'stop' command is executed.
+06:36:46 ERROR : Memory read error at 0xF8007080. AHB AP transaction error, DAP status 0xF0000021
+06:36:46 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+06:37:43 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+06:38:19 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+06:39:15 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1656063122263,  Project:1655922537439
+06:39:15 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+06:39:31 INFO  : Copied contents of C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+06:39:33 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+06:39:36 INFO  : 
+06:39:36 INFO  : Updating hardware inferred compiler options for TP_Final_1.
+06:39:36 INFO  : Clearing existing target manager status.
+06:39:36 INFO  : Closing and re-opening the MSS file of ther project TP_Final_1_bsp
+06:39:37 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+06:39:38 WARN  : Linker script will not be updated automatically. Users need to update it manually.
+06:40:17 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+06:42:51 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+06:43:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+06:43:25 INFO  : 'fpga -state' command is executed.
+06:43:25 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+06:43:25 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+06:43:25 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+06:43:25 INFO  : 'jtag frequency' command is executed.
+06:43:25 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+06:43:26 INFO  : Context for 'APU' is selected.
+06:43:26 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+06:43:26 INFO  : 'configparams force-mem-access 1' command is executed.
+06:43:26 INFO  : Context for 'APU' is selected.
+06:43:26 INFO  : 'stop' command is executed.
+06:43:26 ERROR : Memory read error at 0xF8007080. AHB AP transaction error, DAP status 0xF0000021
+06:43:26 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+06:46:05 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+06:46:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+06:46:39 INFO  : 'fpga -state' command is executed.
+06:46:39 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+06:46:39 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+06:46:39 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+06:46:39 INFO  : 'jtag frequency' command is executed.
+06:46:39 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+06:46:39 INFO  : Context for 'APU' is selected.
+06:46:39 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+06:46:39 INFO  : 'configparams force-mem-access 1' command is executed.
+06:46:39 INFO  : Context for 'APU' is selected.
+06:46:39 INFO  : 'stop' command is executed.
+06:46:39 ERROR : Memory read error at 0xF8007080. AHB AP transaction error, DAP status 0xF0000021
+06:46:39 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+----------------End of Script----------------
+
+06:58:12 INFO  : Registering command handlers for SDK TCF services
+06:58:12 INFO  : Launching XSCT server: xsct.bat -interactive C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\temp_xsdb_launch_script.tcl
+06:58:14 INFO  : XSCT server has started successfully.
+06:58:14 INFO  : Successfully done setting XSCT server connection channel  
+06:58:16 INFO  : Successfully done setting SDK workspace  
+06:58:16 INFO  : Processing command line option -hwspec C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf.
+06:58:16 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+06:58:19 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1656064409580,  Project:1656063122263
+06:58:19 INFO  : The hardware specification for project 'system_wrapper_hw_platform_0' is different from C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf.
+06:58:19 INFO  : Copied contents of C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+06:58:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+06:58:24 INFO  : 
+06:58:25 INFO  : Updating hardware inferred compiler options for TP_Final_1.
+06:58:25 INFO  : Clearing existing target manager status.
+06:58:49 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+06:58:58 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+06:59:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA" && level==0} -index 1' command is executed.
+06:59:07 INFO  : 'fpga -state' command is executed.
+06:59:08 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+06:59:09 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+06:59:09 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C8ABA' is selected.
+06:59:09 INFO  : 'jtag frequency' command is executed.
+06:59:09 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+06:59:09 INFO  : Context for 'APU' is selected.
+06:59:09 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+06:59:09 INFO  : 'configparams force-mem-access 1' command is executed.
+06:59:09 INFO  : Context for 'APU' is selected.
+06:59:10 INFO  : 'stop' command is executed.
+06:59:26 INFO  : 'ps7_init' command is executed.
+06:59:26 INFO  : 'ps7_post_config' command is executed.
+06:59:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:59:26 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+06:59:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:59:27 INFO  : The application 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+06:59:27 INFO  : 'configparams force-mem-access 0' command is executed.
+06:59:27 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+dow C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+06:59:27 INFO  : Memory regions updated for context APU
+06:59:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+06:59:27 INFO  : 'con' command is executed.
+06:59:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+con
+----------------End of Script----------------
+
+06:59:27 INFO  : Launch script is exported to file 'C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_tp_final_1.elf_on_local.tcl'
+07:12:49 INFO  : Disconnected from the channel tcfchan#2.
+07:12:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA" && level==0} -index 1' command is executed.
+07:12:51 INFO  : 'fpga -state' command is executed.
+07:12:51 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+07:12:51 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+07:12:51 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C8ABA' is selected.
+07:12:51 INFO  : 'jtag frequency' command is executed.
+07:12:51 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:12:51 INFO  : Context for 'APU' is selected.
+07:12:53 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:12:53 INFO  : 'configparams force-mem-access 1' command is executed.
+07:12:53 INFO  : Context for 'APU' is selected.
+07:12:53 INFO  : 'stop' command is executed.
+07:13:09 INFO  : 'ps7_init' command is executed.
+07:13:09 INFO  : 'ps7_post_config' command is executed.
+07:13:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:13:10 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+07:13:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:13:10 INFO  : The application 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+07:13:10 INFO  : 'configparams force-mem-access 0' command is executed.
+07:13:10 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+dow C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+07:13:10 INFO  : Memory regions updated for context APU
+07:13:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:13:11 INFO  : 'con' command is executed.
+07:13:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+con
+----------------End of Script----------------
+
+07:13:11 INFO  : Launch script is exported to file 'C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_tp_final_1.elf_on_local.tcl'
+07:17:27 INFO  : Disconnected from the channel tcfchan#3.
+07:17:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA" && level==0} -index 1' command is executed.
+07:17:28 INFO  : 'fpga -state' command is executed.
+07:17:29 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+07:17:29 WARN  : SDK version '2018.1' doesn't match hw_server version '2020.2'. Some debug features may not work.
+07:17:29 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C8ABA' is selected.
+07:17:29 INFO  : 'jtag frequency' command is executed.
+07:17:29 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+07:17:29 INFO  : Context for 'APU' is selected.
+07:17:30 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+07:17:30 INFO  : 'configparams force-mem-access 1' command is executed.
+07:17:30 INFO  : Context for 'APU' is selected.
+07:17:30 INFO  : 'stop' command is executed.
+07:17:48 INFO  : 'ps7_init' command is executed.
+07:17:49 INFO  : 'ps7_post_config' command is executed.
+07:17:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:17:49 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+07:17:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:17:50 INFO  : The application 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+07:17:50 INFO  : 'configparams force-mem-access 0' command is executed.
+07:17:50 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+dow C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+07:17:50 INFO  : Memory regions updated for context APU
+07:17:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+07:17:50 INFO  : 'con' command is executed.
+07:17:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C8ABA"} -index 0
+con
+----------------End of Script----------------
+
+07:17:50 INFO  : Launch script is exported to file 'C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_tp_final_1.elf_on_local.tcl'
+08:08:33 INFO  : Disconnected from the channel tcfchan#4.
+17:40:14 INFO  : Registering command handlers for SDK TCF services
+17:40:15 INFO  : Launching XSCT server: xsct.bat -interactive C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\temp_xsdb_launch_script.tcl
+17:40:16 INFO  : XSCT server has started successfully.
+17:40:16 INFO  : Successfully done setting XSCT server connection channel  
+17:40:16 INFO  : Successfully done setting SDK workspace  
+17:40:16 INFO  : Processing command line option -hwspec C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf.
+17:40:16 INFO  : Checking for hwspec changes in the project system_wrapper_hw_platform_0.
+19:05:18 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1656108170830,  Project:1656064409580
+19:05:18 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:05:30 INFO  : Copied contents of C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+19:05:32 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:05:35 INFO  : 
+19:05:36 INFO  : Updating hardware inferred compiler options for TP_Final_1.
+19:05:36 INFO  : Clearing existing target manager status.
+19:05:36 INFO  : Closing and re-opening the MSS file of ther project TP_Final_1_bsp
+19:05:37 INFO  : Closing and re-opening the MSS file of ther project TP_Final_1_bsp
+20:11:39 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1656112085925,  Project:1656108170830
+20:11:39 INFO  : Project system_wrapper_hw_platform_0's source hardware specification located at C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+20:15:55 INFO  : Copied contents of C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper.hdf into \system_wrapper_hw_platform_0\system.hdf.
+20:15:58 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+20:16:00 INFO  : 
+20:16:01 INFO  : Updating hardware inferred compiler options for TP_Final_1.
+20:16:01 INFO  : Clearing existing target manager status.
+20:19:00 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+20:19:18 INFO  : Connected to target on host '181.47.10.131' and port '3121'.
+20:20:05 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA" && level==0} -index 1' command is executed.
+20:20:05 INFO  : 'fpga -state' command is executed.
+20:20:07 INFO  : Connected through redirection to target on host '181.47.10.131' and port '3121'.
+20:20:07 WARN  : SDK version '2018.1' doesn't match hw_server version '2022.1'. Some debug features may not work.
+20:20:07 INFO  : Jtag cable 'Digilent Arty Z7 003017A4C81CA' is selected.
+20:20:07 INFO  : 'jtag frequency' command is executed.
+20:20:07 INFO  : Sourcing of 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+20:20:07 INFO  : Context for 'APU' is selected.
+20:20:07 INFO  : Hardware design information is loaded from 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf'.
+20:20:07 INFO  : 'configparams force-mem-access 1' command is executed.
+20:20:08 INFO  : Context for 'APU' is selected.
+20:20:08 INFO  : 'stop' command is executed.
+20:20:23 INFO  : 'ps7_init' command is executed.
+20:20:24 INFO  : 'ps7_post_config' command is executed.
+20:20:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:20:24 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+20:20:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:20:24 INFO  : The application 'C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:20:24 INFO  : 'configparams force-mem-access 0' command is executed.
+20:20:24 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:181.47.10.131:3121]
+source C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+loadhw -hw C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+dow C:/CLP/Practicas/1_CLP_II_practicas/TP_Final_1/TP_Final_1.sdk/TP_Final_1/Debug/TP_Final_1.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:20:25 INFO  : Memory regions updated for context APU
+20:20:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:20:25 INFO  : 'con' command is executed.
+20:20:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Arty Z7 003017A4C81CA"} -index 0
+con
+----------------End of Script----------------
+
+20:20:25 INFO  : Launch script is exported to file 'C:\CLP\Practicas\1_CLP_II_practicas\TP_Final_1\TP_Final_1.sdk\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_tp_final_1.elf_on_local.tcl'
+21:41:31 INFO  : Disconnected from the channel tcfchan#2.

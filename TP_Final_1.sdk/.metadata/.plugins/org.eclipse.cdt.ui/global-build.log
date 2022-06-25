@@ -1,0 +1,1206 @@
+07:04:47 **** Incremental Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+07:11:25 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:57:11: error: expected expression before ')' token
+    while ()
+           ^
+../src/main.c:78:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0011";
+              ^
+../src/main.c:82:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:82:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:84:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:84:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:86:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:86:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:94:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0010";
+              ^
+../src/main.c:98:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:98:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:100:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:100:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:102:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:102:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:110:14: warning: comparison between pointer and integer
+        sal_o <= "0110";
+              ^~
+../src/main.c:110:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:110:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0110";
+        ~~~~~~^~~~~~~~~
+../src/main.c:114:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:114:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:116:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:116:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:118:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:118:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:125:14: warning: comparison between pointer and integer
+        sal_o <= "0100";
+              ^~
+../src/main.c:125:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:125:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:129:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:129:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:131:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:131:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:133:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:133:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:140:14: warning: comparison between pointer and integer
+        sal_o <= "1100";
+              ^~
+../src/main.c:140:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:140:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:144:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:144:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:146:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:146:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:148:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:148:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:156:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "1000";
+              ^
+../src/main.c:160:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:160:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:162:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:162:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:164:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:164:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:171:14: warning: comparison between pointer and integer
+        sal_o <= "1001";
+              ^~
+../src/main.c:171:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:171:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1001";
+        ~~~~~~^~~~~~~~~
+../src/main.c:175:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:175:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:177:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:177:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:179:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:179:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:29:8: warning: unused variable 'edo_sig' [-Wunused-variable]
+    int edo_sig;
+        ^~~~~~~
+make: *** [src/main.o] Error 1
+07:11:45 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:78:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0011";
+              ^
+../src/main.c:82:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:82:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:84:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:84:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:86:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:86:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:94:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0010";
+              ^
+../src/main.c:98:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:98:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:100:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:100:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:102:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:102:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:110:14: warning: comparison between pointer and integer
+        sal_o <= "0110";
+              ^~
+../src/main.c:110:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:110:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0110";
+        ~~~~~~^~~~~~~~~
+../src/main.c:114:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:114:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:116:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:116:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:118:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:118:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:125:14: warning: comparison between pointer and integer
+        sal_o <= "0100";
+              ^~
+../src/main.c:125:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:125:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:129:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:129:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:131:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:131:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:133:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:133:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:140:14: warning: comparison between pointer and integer
+        sal_o <= "1100";
+              ^~
+../src/main.c:140:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:140:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:144:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:144:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:146:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:146:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:148:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:148:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:156:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "1000";
+              ^
+../src/main.c:160:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:160:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:162:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:162:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:164:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:164:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:171:14: warning: comparison between pointer and integer
+        sal_o <= "1001";
+              ^~
+../src/main.c:171:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:171:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1001";
+        ~~~~~~^~~~~~~~~
+../src/main.c:175:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:175:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:177:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:177:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:179:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:179:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:29:8: warning: unused variable 'edo_sig' [-Wunused-variable]
+    int edo_sig;
+        ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: TP_Final_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TP_Final_1_bsp/ps7_cortexa9_0/lib -o "TP_Final_1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TP_Final_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size TP_Final_1.elf  |tee "TP_Final_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25000	   1184	  22584	  48768	   be80	TP_Final_1.elf
+'Finished building: TP_Final_1.elf.size'
+' '
+07:12:46 **** Incremental Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+07:17:10 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:78:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0011";
+              ^
+../src/main.c:82:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:82:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:84:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:84:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:86:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:86:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:94:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0010";
+              ^
+../src/main.c:98:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:98:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:100:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:100:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:102:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:102:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:110:14: warning: comparison between pointer and integer
+        sal_o <= "0110";
+              ^~
+../src/main.c:110:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:110:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0110";
+        ~~~~~~^~~~~~~~~
+../src/main.c:114:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:114:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:116:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:116:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:118:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:118:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:125:14: warning: comparison between pointer and integer
+        sal_o <= "0100";
+              ^~
+../src/main.c:125:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:125:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:129:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:129:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:131:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:131:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:133:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:133:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:140:14: warning: comparison between pointer and integer
+        sal_o <= "1100";
+              ^~
+../src/main.c:140:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:140:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:144:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:144:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:146:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:146:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:148:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:148:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:156:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "1000";
+              ^
+../src/main.c:160:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:160:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:162:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:162:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:164:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:164:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:171:14: warning: comparison between pointer and integer
+        sal_o <= "1001";
+              ^~
+../src/main.c:171:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:171:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1001";
+        ~~~~~~^~~~~~~~~
+../src/main.c:175:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:175:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:177:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:177:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:179:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:179:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:29:8: warning: unused variable 'edo_sig' [-Wunused-variable]
+    int edo_sig;
+        ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: TP_Final_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TP_Final_1_bsp/ps7_cortexa9_0/lib -o "TP_Final_1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TP_Final_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size TP_Final_1.elf  |tee "TP_Final_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25000	   1184	  22584	  48768	   be80	TP_Final_1.elf
+'Finished building: TP_Final_1.elf.size'
+' '
+07:17:25 **** Incremental Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+17:41:00 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:9:0: warning: "TRUE" redefined
+ # define TRUE 1
+ 
+In file included from ../../TP_Final_1_bsp/ps7_cortexa9_0/include/xgpio.h:133:0,
+                 from ../src/main.c:4:
+../../TP_Final_1_bsp/ps7_cortexa9_0/include/xil_types.h:65:0: note: this is the location of the previous definition
+ #  define TRUE  1U
+ 
+../src/main.c: In function 'main':
+../src/main.c:81:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0011";
+              ^
+../src/main.c:85:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:85:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:87:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:87:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:89:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:89:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:97:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0010";
+              ^
+../src/main.c:101:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:101:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:103:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:103:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:105:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:105:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:113:14: warning: comparison between pointer and integer
+        sal_o <= "0110";
+              ^~
+../src/main.c:113:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:113:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0110";
+        ~~~~~~^~~~~~~~~
+../src/main.c:117:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:117:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:119:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:119:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:121:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:121:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:128:14: warning: comparison between pointer and integer
+        sal_o <= "0100";
+              ^~
+../src/main.c:128:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:128:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:132:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:132:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:134:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:134:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:136:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:136:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:143:14: warning: comparison between pointer and integer
+        sal_o <= "1100";
+              ^~
+../src/main.c:143:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:143:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:147:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:147:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:149:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:149:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:151:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:151:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:159:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "1000";
+              ^
+../src/main.c:163:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:163:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:165:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:165:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:167:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:167:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:174:14: warning: comparison between pointer and integer
+        sal_o <= "1001";
+              ^~
+../src/main.c:174:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:174:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1001";
+        ~~~~~~^~~~~~~~~
+../src/main.c:178:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:178:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:180:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:180:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:182:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:182:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:32:8: warning: unused variable 'edo_sig' [-Wunused-variable]
+    int edo_sig;
+        ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: TP_Final_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TP_Final_1_bsp/ps7_cortexa9_0/lib -o "TP_Final_1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TP_Final_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size TP_Final_1.elf  |tee "TP_Final_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25000	   1184	  22584	  48768	   be80	TP_Final_1.elf
+'Finished building: TP_Final_1.elf.size'
+' '
+17:41:12 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:81:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0011";
+              ^
+../src/main.c:85:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:85:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:87:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:87:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:89:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:89:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:97:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0010";
+              ^
+../src/main.c:101:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:101:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:103:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:103:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:105:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:105:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:113:14: warning: comparison between pointer and integer
+        sal_o <= "0110";
+              ^~
+../src/main.c:113:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:113:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0110";
+        ~~~~~~^~~~~~~~~
+../src/main.c:117:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:117:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:119:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:119:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:121:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:121:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:128:14: warning: comparison between pointer and integer
+        sal_o <= "0100";
+              ^~
+../src/main.c:128:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:128:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:132:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:132:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:134:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:134:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:136:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:136:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:143:14: warning: comparison between pointer and integer
+        sal_o <= "1100";
+              ^~
+../src/main.c:143:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:143:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:147:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:147:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:149:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:149:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:151:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:151:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:159:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "1000";
+              ^
+../src/main.c:163:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:163:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:165:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:165:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:167:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:167:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:174:14: warning: comparison between pointer and integer
+        sal_o <= "1001";
+              ^~
+../src/main.c:174:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:174:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1001";
+        ~~~~~~^~~~~~~~~
+../src/main.c:178:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:178:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:180:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:180:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:182:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:182:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:32:8: warning: unused variable 'edo_sig' [-Wunused-variable]
+    int edo_sig;
+        ^~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: TP_Final_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TP_Final_1_bsp/ps7_cortexa9_0/lib -o "TP_Final_1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TP_Final_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size TP_Final_1.elf  |tee "TP_Final_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25000	   1184	  22584	  48768	   be80	TP_Final_1.elf
+'Finished building: TP_Final_1.elf.size'
+' '
+17:42:10 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:81:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0011";
+              ^
+../src/main.c:85:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:85:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:87:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:87:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:89:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:89:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:97:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0010";
+              ^
+../src/main.c:101:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:101:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:103:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:103:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:105:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:105:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:113:14: warning: comparison between pointer and integer
+        sal_o <= "0110";
+              ^~
+../src/main.c:113:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:113:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0110";
+        ~~~~~~^~~~~~~~~
+../src/main.c:117:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:117:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:119:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:119:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:121:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:121:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:128:14: warning: comparison between pointer and integer
+        sal_o <= "0100";
+              ^~
+../src/main.c:128:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:128:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:132:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:132:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:134:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:134:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:136:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:136:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:143:14: warning: comparison between pointer and integer
+        sal_o <= "1100";
+              ^~
+../src/main.c:143:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:143:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:147:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:147:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:149:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:149:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:151:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:151:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:159:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "1000";
+              ^
+../src/main.c:163:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:163:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:165:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:165:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:167:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:167:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:174:14: warning: comparison between pointer and integer
+        sal_o <= "1001";
+              ^~
+../src/main.c:174:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:174:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1001";
+        ~~~~~~^~~~~~~~~
+../src/main.c:178:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:178:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:180:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:180:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:182:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:182:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+'Finished building: ../src/main.c'
+' '
+'Building target: TP_Final_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TP_Final_1_bsp/ps7_cortexa9_0/lib -o "TP_Final_1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TP_Final_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size TP_Final_1.elf  |tee "TP_Final_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25000	   1184	  22584	  48768	   be80	TP_Final_1.elf
+'Finished building: TP_Final_1.elf.size'
+' '
+17:42:32 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:79:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0011";
+              ^
+../src/main.c:83:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:83:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:85:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:85:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:87:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:87:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:95:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "0010";
+              ^
+../src/main.c:99:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:99:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:101:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:101:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:103:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:103:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:111:14: warning: comparison between pointer and integer
+        sal_o <= "0110";
+              ^~
+../src/main.c:111:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:111:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0110";
+        ~~~~~~^~~~~~~~~
+../src/main.c:115:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:115:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:117:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:117:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:119:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:119:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:126:14: warning: comparison between pointer and integer
+        sal_o <= "0100";
+              ^~
+../src/main.c:126:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:126:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "0100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:130:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:130:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:132:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:132:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:134:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:134:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:141:14: warning: comparison between pointer and integer
+        sal_o <= "1100";
+              ^~
+../src/main.c:141:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:141:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1100";
+        ~~~~~~^~~~~~~~~
+../src/main.c:145:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:145:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:147:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:147:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:149:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:149:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:157:14: warning: assignment makes integer from pointer without a cast [-Wint-conversion]
+        sal_o = "1000";
+              ^
+../src/main.c:161:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:161:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:163:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:163:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:165:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:165:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:172:14: warning: comparison between pointer and integer
+        sal_o <= "1001";
+              ^~
+../src/main.c:172:14: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:172:14: warning: statement with no effect [-Wunused-value]
+        sal_o <= "1001";
+        ~~~~~~^~~~~~~~~
+../src/main.c:176:18: warning: comparison between pointer and integer
+        if (sec_i == "00")
+                  ^~
+../src/main.c:176:18: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:178:23: warning: comparison between pointer and integer
+        else if (sec_i == "01")
+                       ^~
+../src/main.c:178:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+../src/main.c:180:23: warning: comparison between pointer and integer
+        else if (sec_i == "10")
+                       ^~
+../src/main.c:180:23: warning: comparison with string literal results in unspecified behavior [-Waddress]
+'Finished building: ../src/main.c'
+' '
+'Building target: TP_Final_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TP_Final_1_bsp/ps7_cortexa9_0/lib -o "TP_Final_1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TP_Final_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size TP_Final_1.elf  |tee "TP_Final_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25000	   1184	  22584	  48768	   be80	TP_Final_1.elf
+'Finished building: TP_Final_1.elf.size'
+' '
+19:21:25 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:0:
+../../TP_Final_1_bsp/ps7_cortexa9_0/include/xparameters.h:19:10: fatal error: xparameters_ps.h: No such file or directory
+ #include "xparameters_ps.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+19:26:14 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:0:
+../../TP_Final_1_bsp/ps7_cortexa9_0/include/xparameters.h:19:10: fatal error: xparameters_ps.h: No such file or directory
+ #include "xparameters_ps.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+19:31:57 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:0:
+../../TP_Final_1_bsp/ps7_cortexa9_0/include/xparameters.h:19:10: fatal error: xparameters_ps.h: No such file or directory
+ #include "xparameters_ps.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
+19:32:13 **** Auto Build of project TP_Final_1_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/led_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/led_ip_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_3/src"
+make -C ps7_cortexa9_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/led_ip_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/led_ip_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling led_ip..."
+led_ip_selftest.c: In function 'LED_IP_Reg_SelfTest':
+led_ip_selftest.c:52:55: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+    if ( LED_IP_mReadReg (baseaddr, read_loop_index*4) != (read_loop_index+1)*READ_WRITE_MUL_FACTOR){
+                                                       ^~
+led_ip_selftest.c:36:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_9/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+xsdps.c: In function 'XSdPs_FrameCmd':
+xsdps.c:1272:11: warning: this statement may fall through [-Wimplicit-fallthrough=]
+    RetVal |= RESP_R1 | (u32)XSDPS_DAT_PRESENT_SEL_MASK;
+xsdps.c:1273:3: note: here
+   case ACMD41:
+   ^~~~
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_6/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+19:32:30 **** Auto Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:30:11: warning: unused variable 'psb_check' [-Wunused-variable]
+    int i, psb_check, sec_i, sal_o, edo_sig;
+           ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building target: TP_Final_1.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../TP_Final_1_bsp/ps7_cortexa9_0/lib -o "TP_Final_1.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: TP_Final_1.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size TP_Final_1.elf  |tee "TP_Final_1.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24744	   1184	  22584	  48512	   bd80	TP_Final_1.elf
+'Finished building: TP_Final_1.elf.size'
+' '
+20:20:04 **** Incremental Build of configuration Debug for project TP_Final_1 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../TP_Final_1_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:3:0:
+../../TP_Final_1_bsp/ps7_cortexa9_0/include/xparameters.h:19:10: fatal error: xparameters_ps.h: No such file or directory
+ #include "xparameters_ps.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [src/main.o] Error 1
